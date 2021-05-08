@@ -1,0 +1,84 @@
+.twoColumnsGrid{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.twoColumnsGrid div{
+	position: relative;
+	margin-top: 0;
+}
+
+.titleColumn{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	line-height: 26px;
+	margin-left:0;
+	margin-right:0;
+	word-break: break-word;
+}
+
+.twoColumnsGridItem_2 p {
+	word-break: break-word !important;
+}
+
+.textColumn{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.buttonColumn{
+	position: absolute;
+	bottom:0;
+	left:50%;
+	transform: translateX(-50%);
+	background-color: orange;	
+	height: 50px;
+	max-width: 230px;
+	width:100%;
+	border-radius: 30px;
+	color:white;
+	font-size: 18px;
+	
+}
+
+ .twoColumnsGrid button{
+	z-index: 2;
+	outline: none;
+}
+
+.twoColumnsGrid img{
+	display: block;
+	margin: 0 auto 0 auto;
+	
+}
+
+
+@media only screen and (max-width: 768px){
+	.twoColumnsGrid{
+		grid-template-columns: auto;
+		margin-top: 0;
+	}	
+
+	.titleColumn{
+		font-size: 18px !important;
+		margin-bottom: -20px;
+	}
+
+	.textColumn{
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+
+	.buttonColumn{
+		max-width: 100%;
+		width:75%;
+		border-radius: 40px;
+		font-size: 18px;
+	}
+
+	.twoColumnsGrid .image_2_column{
+	}
+
+
+}

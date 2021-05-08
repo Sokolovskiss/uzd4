@@ -1,0 +1,250 @@
+.formTitle{
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	margin-top: 140px;
+	margin-bottom: 65px;
+}
+
+.topInputFieldsGrid{
+	display: grid;
+	grid-template-columns: 27% auto 1% auto 27%;
+}
+
+.bottomInputFieldsGrid{
+	display: grid;
+	grid-template-columns: 27% auto 27%;
+}
+
+.topInputFieldsGrid input[type=text], .bottomInputFieldsGrid input[type=text]{
+	background: rgba(196, 196, 196, 0.4);
+	border-radius: 7px;
+	height: 43px;
+	width:100%;
+	padding: 10px;
+	color: #2F4858;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+.bottomInputFieldsGrid textarea{
+	background: rgba(196, 196, 196, 0.4);
+	border-radius: 7px;
+	border:none;
+	height: 232px;
+	width:100%;
+	padding: 10px;
+	color: #2F4858;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+.topInputFieldsGrid input::placeholder,
+.bottomInputFieldsGrid input[type=text]::placeholder,
+.bottomInputFieldsGrid textarea::placeholder{
+	color: #2F4858;
+
+}
+
+.bottomInputFieldsGrid input, .bottomInputFieldsGrid textarea{
+	margin-top: 20px;
+}
+
+#formRequiredText{
+	font-size: 14px;
+	text-align: left;
+	margin:0;
+}
+
+#formCheckboxGrid{
+	display: grid;
+	grid-template-columns: 5% auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+#formCheckboxGrid p{
+	margin: 0;
+	font-size: 14px;
+	text-align: left;
+	line-height: 17px;
+}
+
+#formButton{
+	display: block;
+	margin: 0 auto 0 auto;
+	height: 62px;
+	max-width: 180px;
+	width:100%;
+	background-color: orange;
+	border-radius: 30px;
+	color:white;
+	font-size: 24px;
+}
+
+#formButton:hover{
+	background-color: #f5dd42;
+}
+
+#formButton:active{
+	background-color: #f59342;
+}
+
+.emptyGridItem{
+	display:none;
+}
+
+/*custom checkbox*/
+
+.customCheckbox{
+	display: block;
+	position: relative;  
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+}
+
+.customCheckbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 16px;
+	width: 16px;
+	background-color: #E7E7E7;
+	border-radius: 3px;
+}
+
+.customCheckbox:hover input ~ .checkmark {
+	background-color: gray;
+}
+
+.customCheckbox input:checked ~ .checkmark {
+	background-color: orange;
+}
+
+.checkmark:after {
+	content: "";
+	top: 0;
+	left: 20px;
+	position: absolute;
+	display: none;
+}
+
+.customCheckbox input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.customCheckbox .checkmark:after {
+	left: 6px;
+	top: 2px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+/*submitted info*/
+
+#titleInfoSubmitted{
+	margin:40px 0 30px 0;
+	font-size: 24px;
+	font-weight: 500;
+	color:#FFA800;
+	display:none;
+}
+
+#textInfoSubmitted{
+	margin:0 0 0 0;
+	font-size: 18px;
+	color:#FFA800;
+	display:none;
+}
+
+@media only screen and (max-width: 768px){
+
+	.formTitle{
+		margin-top: 120px;
+		margin-bottom: 20px;
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+	.bottomInputFieldsGrid{
+		grid-template-columns: 5% auto 5%;
+	}
+	.topInputFieldsGrid{
+		grid-template-columns: 5% auto 5%;
+	}
+
+	.emptyGridItem{
+		display: block;
+	}	
+
+	#emailField{
+		margin-top: 8px;
+	}
+
+	.bottomInputFieldsGrid textarea{
+		height: 150px;
+	}
+	.topInputFieldsGrid input{
+		margin-top: 20px;
+	}
+	.bottomInputFieldsGrid input, .bottomInputFieldsGrid textarea{
+		margin-top: 8px;
+	}
+
+	.topInputFieldsGrid input[type=text], .bottomInputFieldsGrid input[type=text]{
+		height:35px;
+	}
+
+	.topInputFieldsGrid input[type=text],
+	.bottomInputFieldsGrid input[type=text],
+	.bottomInputFieldsGrid textarea{
+		font-size: 14px;
+	}
+
+	#formRequiredText{
+		font-size: 12px;
+	}
+
+	#formCheckboxGrid{
+		grid-template-columns: 10% auto;
+		margin-top: 10px;
+	}
+
+
+	#formCheckboxGrid p{
+		font-size: 12px;
+	}
+
+	#formButton{
+		height: 47px;
+		max-width: 140px;
+		font-size: 18px;
+	}
+
+	#titleInfoSubmitted{
+		margin-right: 5%;
+		margin-left: 5%;
+		font-size: 18px;
+	}
+
+	#textInfoSubmitted{
+		margin-right: 5%;
+		margin-left: 5%;
+		font-size: 14px;
+	}
+
+
+
+}
+
+

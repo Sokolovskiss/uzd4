@@ -1,0 +1,67 @@
+.imageAndTextGrid{
+	display: grid;
+	margin-top: 105px;
+}
+
+.imageAndTextGrid img{
+	max-width: 150px;
+	width:100%;
+}
+
+
+.leftColumnImgText img{
+	float:right;
+}
+
+
+.rightColumnImgText p{
+	text-align: left;
+	margin: 0;
+	margin-top: 10px;
+	margin-left: 40px;
+	margin-right:25%;
+}
+
+.leftColumnImgText p{
+	text-align: right;
+	margin:0;
+	margin-top: 10px;
+	margin-right: 40px;
+	margin-left:25%;
+}
+
+.hiddenImage, .hiddenText{
+	display:none;
+}
+
+
+@media only screen and (max-width: 768px){
+	.imageAndTextGrid{
+		grid-template-columns: auto !important;
+		margin-top: 30px;
+	}
+
+	.imageAndTextGrid p{
+		text-align: center;
+		margin-right: 5%;
+		margin-left: 5%;
+		line-height: 14px;
+	}
+
+	.imageAndTextGrid img{
+		float:none;
+		display: block;
+		margin: 0 auto 0 auto;
+		max-width: 130px;
+		margin-top: 30px;
+	}
+
+	.visibleImage, .visibleText{
+		display:none !important;
+	}
+
+	.hiddenText{
+		display: block;
+	}
+
+}

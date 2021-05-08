@@ -1,0 +1,81 @@
+.pictureCollectionGrid{
+	margin-top: 140px;
+	display: grid;
+	position: relative;
+	overflow: hidden;
+	height: 400px;
+}
+
+.gridItem{
+	height: 100%;
+	width: auto;
+	background-size: cover;
+	background-position: center;
+}
+
+.gridItem2{
+	height: 50%;
+	width: auto;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+.pictureCollectionGrid div img{
+	width:100%;
+}
+
+.buttomImage{
+	position: absolute;
+	height: 50%;
+	bottom: 0;
+	width: 100%;
+}
+
+.ripped_1{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top:0;
+	left:0;
+	padding: 0;
+}
+
+.ripped_2{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	bottom:0;
+	left:0;
+	padding: 0;
+}
+
+
+@media only screen and (max-width: 768px){
+	.pictureCollectionGrid{
+		height: 350px;
+	}
+
+
+	.pictureCollectionGrid{
+		grid-template-columns: 45% 5% 5% 45% !important;
+		margin-top: 0;
+	}
+
+	.pictureCollectionGrid div:nth-of-type(1){
+		order: 3;
+	}
+
+	.pictureCollectionGrid div:nth-of-type(2){
+		order: 4;
+	}
+
+	.pictureCollectionGrid div:nth-of-type(3){
+		order: 1;
+	}
+
+	.pictureCollectionGrid div:nth-of-type(4){
+		order: 2;
+	}
+}

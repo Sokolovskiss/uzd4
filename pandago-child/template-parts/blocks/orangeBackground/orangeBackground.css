@@ -1,0 +1,61 @@
+.orangeBackground{
+	position: relative;
+	background-color: #FFCB66;
+	height: 553px;
+	width:100%;
+	margin-top: 130px;
+}
+
+.orangeBackground img:nth-of-type(3){
+	position: absolute;
+	left:50%;
+	/*top:50%;*/
+	transform: translateX(-50%);
+	width: 100%;
+	
+}
+
+.orangeBackground p{
+	position: absolute;
+	top:70%;
+	left:50%;
+	transform: translateX(-50%);
+	margin:0;	
+	width: 60%;
+	font-size: 24px;
+	line-height: 29px;
+	color:white;
+	border: 0px solid blue;
+}
+
+.rippedOrange_1{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+}
+
+.rippedOrange_2{
+	position: absolute;
+	bottom:0;
+	left:0;
+	width: 100%;
+}
+
+@media only screen and (max-width: 768px){
+	.orangeBackground img:nth-of-type(3){
+		/*top:35%;*/
+	}
+
+	.orangeBackground p{
+		font-size: 18px;
+		line-height: 22px;
+		width:90%;
+		top:60%;
+	}
+
+	.orangeBackground{
+		height: 471px;
+	}
+
+}
